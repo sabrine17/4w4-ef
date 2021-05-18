@@ -673,7 +673,7 @@ textarea {
 
 @media (min-width: 1200px) {
   .site {
-    grid-template-columns: 80% 20%;
+    grid-template-columns: 100%;
     grid-template-areas: "header header" "main sidebar" "footer footer";
   }
 }
@@ -714,6 +714,9 @@ textarea {
 	#primary .site-main (section principale de la page)
 	#colophon .site-footer	
 */
+/*.site-branding, #primary, #colophon {
+	//margin-left : 3rem;
+}*/
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -1690,6 +1693,7 @@ La barre du millieu
 }
 
 .cours section.bloc {
+  width: 100vw;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

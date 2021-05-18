@@ -19,15 +19,14 @@ get_header();
 
 				<h1 class="page-title">Cours</h1>
 				<?php
-				//the_archive_title( '<h1 class="page-title">', '</h1>' );
-				//the_archive_description( '<div class="archive-description">', '</div>' );
+				the_archive_description( '<div class="archive-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
 			<section class="cours">
 			<?php
 			/* Start the Loop */
             $precedent = "XXXXXX";
-			//$chaine_bouton_radio = '';
+			$chaine_bouton_radio = '';
 			//global $tProprieté;
 			while ( have_posts() ) :
 				the_post();
@@ -37,7 +36,10 @@ get_header();
 					if ("XXXXXX" != $precedent)	: ?>
 						</section>
 						<?php if (in_array($_SESSION,['Web', 'Jeu', 'Spécifique', 'Image 2d/3d'])) : ?>
-                            	
+                            <section class="ctrl-carrousel">
+								<?php echo $chaine_bouton_radio;
+								$chaine_bouton_radio = '';
+								 ?>		
 							</section>
 						<?php endif; ?>
 					<?php endif; ?>	
@@ -46,12 +48,11 @@ get_header();
 				<?php endif ?>	
 
 				<?php if (in_array($tPropriété['session'],  ['Web', 'Jeu', 'Spécifique', 'Image 2d/3d']) ) : 
-						get_template_part( 'template-parts/content', 'cours' ); 
+						get_template_part( 'template-parts/content', 'cours-section' ); 
                         
-						//$chaine_bouton_radio .= '<input class="rad-carrousel"  type="radio" name="rad-'.$tPropriété['typeCours'].'">';
-						/*elseif ($tPropriété['typeCours'] == 'Projets'):
-							get_template_part( 'template-parts/content', 'galerie' ); */
-                            else :		
+						$chaine_bouton_radio .= '<input class="rad-carrousel"  type="radio" name="rad-'.$tPropriété['typeCours'].'">';
+						
+                           else :		
 						get_template_part( 'template-parts/content', 'cours-article' ); 
 				endif;	
         $precedent = $tPropriété['session'];
@@ -66,7 +67,7 @@ get_header();
 	</main><!-- #main -->
 
 <?php 
-// get_sidebar();
+//get_no-sidebar();
 get_footer();
 
 function convertirTableau(&$tPropriété)

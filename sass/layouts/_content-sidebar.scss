@@ -8,7 +8,7 @@
 		"sidebar sidebar"
 		"footer footer";
 	@include desktop{
-	grid-template-columns: 80% 20%;
+	grid-template-columns: 100%;
 	grid-template-areas:
 		"header header"
 		"main sidebar"
@@ -25,6 +25,8 @@
 	grid-area: main;
 	overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
 }
+
+
 
 .widget-area {
 	grid-area: sidebar;
