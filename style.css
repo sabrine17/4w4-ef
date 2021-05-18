@@ -1699,6 +1699,11 @@ La barre du millieu
   flex-wrap: wrap;
 }
 
+.cours section.bloc h2 {
+  padding-top: 50px;
+  font-size: 20px;
+}
+
 .cours section.bloc article {
   display: flex;
   flex-direction: column;

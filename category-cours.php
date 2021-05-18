@@ -43,12 +43,13 @@ get_header();
 							</section>
 						<?php endif; ?>
 					<?php endif; ?>	
-					<h2><?php echo $tPropriété['session'] ?></h2>
+				
 					<section <?php echo class_composant($tPropriété['session']) ?>>
-				<?php endif ?>	
-
+                    <h2><?php echo $tPropriété['session'] ?></h2>
+                    <?php endif ?>	
+              
 				<?php if (in_array($tPropriété['session'],  ['Web', 'Jeu', 'Spécifique', 'Image 2d/3d']) ) : 
-						get_template_part( 'template-parts/content', 'cours-section' ); 
+						get_template_part( 'template-parts/content', 'cours-article' ); 
                         
 						$chaine_bouton_radio .= '<input class="rad-carrousel"  type="radio" name="rad-'.$tPropriété['typeCours'].'">';
 						
@@ -57,7 +58,7 @@ get_header();
 				endif;	
         $precedent = $tPropriété['session'];
 			endwhile;?>
-            
+           
 			</section> <!-- fin section cours -->
 		<?php endif; ?>
 		
