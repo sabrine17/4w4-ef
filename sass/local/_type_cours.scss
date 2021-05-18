@@ -1,0 +1,177 @@
+/*.cours{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    h2{
+        width: 100%;
+        font-size:3rem;
+        text-align: center;
+        padding:0%;
+        margin: 10px auto 0 auto; 
+    }
+}
+
+
+.bloc{
+    width: 100vw;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+
+    article{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 92%;
+        border: 1px solid #aaa;
+        margin: 4%;
+    
+    
+    
+        p{
+            font-size: 1.3rem;
+            margin: .3rem;
+            
+        }
+    
+        a{
+            display: block;
+            text-align: center;
+            font-size: clamp(1rem, #{"-0.875rem +8.333vw"}, 3rem);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        }
+    }
+    
+    
+    .Web article{
+        background-color: white ;
+    }
+    
+    .Conception article{
+        background-color: white ; 
+    }
+    
+    .Jeu article{
+        background-color: white ; 
+    }
+    
+    .Spécifique article{
+        background-color: white;
+    }
+    
+    @include tablet
+    
+    {
+        .accueil{
+            flex-direction: row;
+        }
+    
+        .bloc{
+    
+            article{
+                width:42%;
+                margin: 2%;
+                a{
+                    font-size: clamp(1rem, #{"-0.875rem +6.333vw"}, 3rem);
+    
+                }
+            }
+        }
+    }
+    
+    @include desktop
+    
+    
+    {
+        .accueil{
+            flex-direction: row;
+        }
+    
+        .bloc{
+    
+            article{
+                width:29%;
+                margin: 2%;
+                a{
+                    font-size: clamp(1rem, #{"-0.875rem +4.333vw"}, 3rem);
+    
+                }
+            }
+        }
+    }
+
+*/
+
+.cours {
+    display : flex;
+    flex-direction: column;
+    padding-left: 4%;
+   
+    section.bloc {
+       
+        h2 {
+       
+        
+        }
+        display : flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        article {
+            display : flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            border : 1px solid #aaa;
+            width : 95%;
+            margin : 1%;
+            padding  : 1rem;
+            text-align : center;
+            p {
+                margin: .4rem;
+                font-size: 1rem;
+            }
+            a {
+                font-size: 1.5rem;
+                font-weight: bold;
+                text-decoration: none;
+            }
+        }
+        @include tablet {
+            article {
+                width : 47%;
+                margin : 1%;
+            }
+        }
+        @include desktop {
+            article {
+            width : 31%;
+            margin : 1%;
+            }
+        }
+    }
+}
+.Web article{
+    background-color: rgb(72, 6, 255) ;
+}
+
+.Conception article{
+    background-color: rgb(0, 8, 233) ; 
+}
+
+.Jeu article{
+    background-color: rgb(8, 134, 252) ; 
+}
+
+.Spécifique article{
+    background-color: rgb(178, 195, 233);
+}
+
+

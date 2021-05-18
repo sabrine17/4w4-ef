@@ -714,10 +714,6 @@ textarea {
 	#primary .site-main (section principale de la page)
 	#colophon .site-footer	
 */
-.site-branding, #primary, #colophon {
-  margin-left: 3rem;
-}
-
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -1572,5 +1568,183 @@ La barre du millieu
 --------------------------------------------- */
 #secondary {
   padding-left: 8%;
+}
+
+/* local type_cours
+--------------------------------------------- */
+/*.cours{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    h2{
+        width: 100%;
+        font-size:3rem;
+        text-align: center;
+        padding:0%;
+        margin: 10px auto 0 auto; 
+    }
+}
+
+
+.bloc{
+    width: 100vw;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+
+    article{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 92%;
+        border: 1px solid #aaa;
+        margin: 4%;
+    
+    
+    
+        p{
+            font-size: 1.3rem;
+            margin: .3rem;
+            
+        }
+    
+        a{
+            display: block;
+            text-align: center;
+            font-size: clamp(1rem, -0.875rem +8.333vw, 3rem);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        }
+    }
+    
+    
+    .Web article{
+        background-color: white ;
+    }
+    
+    .Conception article{
+        background-color: white ; 
+    }
+    
+    .Jeu article{
+        background-color: white ; 
+    }
+    
+    .Spécifique article{
+        background-color: white;
+    }
+    
+    @include tablet
+    
+    {
+        .accueil{
+            flex-direction: row;
+        }
+    
+        .bloc{
+    
+            article{
+                width:42%;
+                margin: 2%;
+                a{
+                    font-size: clamp(1rem, -0.875rem +6.333vw, 3rem);
+    
+                }
+            }
+        }
+    }
+    
+    @include desktop
+    
+    
+    {
+        .accueil{
+            flex-direction: row;
+        }
+    
+        .bloc{
+    
+            article{
+                width:29%;
+                margin: 2%;
+                a{
+                    font-size: clamp(1rem, -0.875rem +4.333vw, 3rem);
+    
+                }
+            }
+        }
+    }
+
+*/
+.cours {
+  display: flex;
+  flex-direction: column;
+  padding-left: 4%;
+}
+
+.cours section.bloc {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.cours section.bloc article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #aaa;
+  width: 95%;
+  margin: 1%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.cours section.bloc article p {
+  margin: .4rem;
+  font-size: 1rem;
+}
+
+.cours section.bloc article a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@media (min-width: 800px) {
+  .cours section.bloc article {
+    width: 47%;
+    margin: 1%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cours section.bloc article {
+    width: 31%;
+    margin: 1%;
+  }
+}
+
+.Web article {
+  background-color: #4806ff;
+}
+
+.Conception article {
+  background-color: #0008e9;
+}
+
+.Jeu article {
+  background-color: #0886fc;
+}
+
+.Spécifique article {
+  background-color: #b2c3e9;
 }
 /*# sourceMappingURL=style.css.map */
