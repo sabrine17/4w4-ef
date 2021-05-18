@@ -1,4 +1,4 @@
-# Exam
+# 4w4-ef
 
 Auteur: Sabrine Cheurfa
 
@@ -9,11 +9,11 @@ Mon site est un site s'adressant principalement aux étudiants et nouveaux étud
 
 Le titre de mon site : TIM 
 
-Lien répertoire  git du exam:
-https://github.com/sabrine17/exam.git
+Lien répertoire git du 4w4-ef:
+https://github.com/sabrine17/4w4-ef.git
 
-Lien site git hub du exam
-https://sabrine17.github.io/exam
+Lien site git hub du 4w4-ef
+https://sabrine17.github.io/4w4-ef
 // CLIQUER SUR 4W4 POUR AFFICHER LES IMAGES ET QUE LA PAGE FONCTIONNE NORMALEMENT
 
 
