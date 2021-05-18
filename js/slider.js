@@ -9,7 +9,7 @@
 			//noCtrlCarrousel = noCtrlCarrousel +1;
 			console.log(bout.length)
 
-			let k =0;
+			let k = 0;
 			bout[0].checked = true;
 			for (const bt of bout)
 			{

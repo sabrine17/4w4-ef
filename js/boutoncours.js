@@ -1,17 +1,17 @@
 (function(){
-	/* Idntifier la collection de button cours */
-		let butcours = document.querySelectorAll('.buttoncours')
+	/* Identifier la collection de button cours */
+		let butcours = document.querySelectorAll('p')
 		let ctrlCours = document.querySelectorAll('.ctrl-cours')
 		let noCtrlCours = 0;
-		for (const elmCarrousel of butcours)
+		for (const elmCours of butcours)
 		{
-			let bout = ctrlCours[noCtrlCours++].querySelectorAll('.p')
+			let butcours = ctrlCours[noCtrlCours++].querySelectorAll('p')
 			//noCtrlCarrousel = noCtrlCarrousel +1;
 			console.log(bout.length)
 
 			let k =0;
-			bout[0].checked = true;
-			for (const bt of bout)
+			butcours[0].checked = true;
+			for (const bt of butcours)
 			{
 				bt.value = k++;
 				console.log(bt.value)
