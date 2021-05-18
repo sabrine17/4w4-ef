@@ -10,8 +10,8 @@ global $tPropriété;
 ?>
 
 <article>
-	<section class="ctrl-cours">				
-	<p><?php echo $tPropriété['typeCours']  ?></p>
+	<section class="butcours">				
+	<p class="ctrl-cours"><?php echo $tPropriété['typeCours']  ?></p>
 	</section>
 	<a href="<?php echo get_permalink() ?>"><?php echo $tPropriété['sigle']  ; ?></a>
 	<p><?php echo $tPropriété['nbHeure'] ; ?></p>
