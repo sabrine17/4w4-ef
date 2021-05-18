@@ -1597,7 +1597,7 @@ La barre du millieu
   margin-bottom: 3%;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .cours section.bloc h2 {
